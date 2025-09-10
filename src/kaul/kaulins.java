@@ -6,19 +6,31 @@ import java.util.Scanner;
 
 
 public class kaulins {
-
+	Random rand = new Random();
+	Scanner scan = new Scanner(System.in);
 	public static void main(String[] args) {
-		int skaitlis,reizes;
-		Random rand = new Random();
+		int reizes;
 		Scanner scan = new Scanner(System.in);
-		System.out.print("Cik reizes mest kaulinu ");
+		System.out.print("Cik reizes mest kaulinu: ");
 		reizes = scan.nextInt();
-		for(int i=1;i<=reizes;i++) {
 		
-		skaitlis = rand.nextInt(6)+1;
-		System.out.println("Uzkrita skaitlis "+skaitlis);
+			mestkaulinu(reizes);
+			scan.close();
 		}
-		scan.close();
-	}
 
+	static void mestkaulinu(int reizes) {
+		int skaitlis;
+		Random rand = new Random();
+		for(int i=1;i<=reizes;i++) {
+		skaitlis = rand.nextInt(6)+1;
+		System.out.println("Uzkrita skaitlis : "+skaitlis);
+		}
+	}
+	
+		
+	
 }
+	
+		
+	
+
