@@ -5,10 +5,11 @@ import java.util.Scanner;
 
 
 
-public class kaulins {
+public class GitKaulins {
 	Random rand = new Random();
 	Scanner scan = new Scanner(System.in);
 	public static void main(String[] args) {
+		System.out.println("Esi sveicināts mana metama kauliņa programma!");
 		int reizes;
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Cik reizes mest kaulinu: ");
@@ -19,6 +20,7 @@ public class kaulins {
 		}
 
 	static void mestkaulinu(int reizes) {
+		
 		int skaitlis;
 		Random rand = new Random();
 		for(int i=1;i<=reizes;i++) {
