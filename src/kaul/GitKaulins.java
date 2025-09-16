@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class GitKaulins {
 	Random rand = new Random();
 	Scanner scan = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 		System.out.println("Esi sveicināts mana metama kauliņa programma!");
 		int reizes;
@@ -25,7 +26,11 @@ public class GitKaulins {
 		Random rand = new Random();
 		for(int i=1;i<=reizes;i++) {
 		skaitlis = rand.nextInt(6)+1;
-		System.out.println("Uzkrita skaitlis : "+skaitlis);
+		if(skaitlis == 6)
+			System.out.println("Uzkrita skaitlis : "+skaitlis+" 7");
+		else 
+			System.out.println("Uzkrita skaitlis : "+skaitlis);
+			
 		}
 	}
 	
